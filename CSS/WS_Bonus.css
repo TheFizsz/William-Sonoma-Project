@@ -1,0 +1,39 @@
+#recheading{
+    
+    position: absolute; 
+    margin-left: 34%;
+    margin-top: -3%;
+
+    font-size: 60px;
+    color: red;
+    font-family: 'AlexBrushRegular'; 
+    opacity: 0;
+  
+  }
+
+  #bonusDesc{
+
+    position: absolute;
+
+     margin-top: 3%;
+     margin-left: 39.5%;
+
+     opacity: 0;
+     font-size: 20px;
+    color: red;
+    
+  }
+
+  #contacts{
+
+    padding-left: 15%;
+    padding-top: 9%;
+
+  }
+
+  form{
+
+    padding-top: 4%;
+    opacity: 0;
+
+  }

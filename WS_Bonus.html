@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html>
+
+<head>
+  
+    
+<meta charset="UTF-8">
+    
+<title>William-Sonoma</title>
+
+  
+    
+    <!--Configure the header section of the website-->
+  
+    <link href="././CSS/WS_Header.css" rel="stylesheet" type="text/css">
+    <link href="././CSS/WS_HolidayHome.css" rel="stylesheet" type="text/css">
+    <link href="././CSS/WS_Bonus.css" rel="stylesheet" type="text/css">
+    <link href="././CSS/WS_Footer.css" rel="stylesheet" type="text/css">
+  
+
+    <!-- Compiled and minified CSS -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  
+
+    <!-- Compiled and minified JavaScript -->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
+    <!--Alex Brush Font-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/alex-brush" type="text/css"/>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+       //Handles page animation
+       $(document).ready(function(){
+       
+           if($(window).width() <= 1600){ // change functionality for smaller screens 
+
+             $("#sale").animate({width: '290', height: '220'}, "slow");
+             $("#sale").find("h1").animate({fontSize: "90px"});
+
+             $("#recheading").animate({opacity: '1', fontSize: '50px', marginLeft: '30%'}, "slow"); 
+
+             $("#title").animate({opacity: '1', width: '350'}, "slow");
+
+             $("form").animate({paddingTop: '2%', opacity: '1'}, "slow");
+
+             $("#Nav").animate({opacity: '1', marginTop: '1%'}, "slow");     
+             $("#Nav").find("a").animate({fontSize: '125%'}, "slow"); 
+
+             $("#bonusDesc").animate({marginTop: '1%', marginLeft: '32%', opacity: '1', fontSize: '17px'}, "slow");
+
+            }else{
+                 
+               $("#sale").animate({width: '420px'}, "slow");
+           $("#title").animate({opacity: '1'}, "slow");     
+           $("#Nav").animate({opacity: '1', marginTop: '2'}, "slow"); 
+           $("#recheading").animate({opacity: '1'}, "slow"); 
+           $("#headImage").find("li").animate({paddingLeft: '120', opacity: 1}, "slow");
+           $("form").animate({paddingTop: '2%', opacity: '1'}, "slow");
+           $("#bonusDesc").animate({marginTop: '1%', opacity: '1'}, "slow");
+
+
+            }
+
+           
+
+       });
+    
+    </script>
+
+</head>
+
+<body>
+
+  <div id="header">
+    
+    <div id="sale"><h1>SALE</h1></div>
+     
+    <center><img id="title" src="././images/W-S Header.png"></center>
+
+  </div>
+  
+  <ul id="Nav">
+    
+    <li><a href="WS_Index.html">HOME</a></li>
+    <li><a href="WS_HolidayHome.html">HOLIDAY HOME</a></li>
+    <li><a href="WS_HolidayGifts.html"> HOLIDAY GIFTS</a></li>
+    <li><a href="WS_Recipe.html">RECIPES</h6></a></li>
+    <li id="bonus"><a href="WS_Bonus.html">BONUS SAVINGS</a></li>
+
+  </ul>
+    
+  <h2 id="recheading"><b><i>Special Holiday Bonus Program</i></b></h2>
+
+  <div id="bonusDesc"> 
+    <center><p><i>
+    
+      Join the William-Sonoma Holiday Club and save even more!<br>
+      Give us your name, phone number, email address and receive a bonus coupon<br>
+      equal to 20% of your holiday purchase!<br>
+
+    </i></p></center>
+
+  </div>
+  
+  <div id="contacts" class="container">
+			
+      <form method="POST" action="">
+          
+          First Name: <br>
+				  <input type="text" name="firstname" placeholder="Enter your first name"> <br>
+          
+          Last Name: <br>
+				  <input type="text" name="lastname" placeholder="Enter your last name"> <br>
+
+          E-mail: <br>
+          <input type="email" name="Email" placeholder="Enter your E-mail address"> <br>
+          
+          Cell #: <br>
+				  <input type="number" name="phone" placeholder="Enter your cell #"> <br>
+
+          <input type="submit" value="SEND" class="waves-effect waves-light btn red darken-4">
+				  <input type="reset" name="reset" value="CLEAR" class="waves-effect waves-light btn clearButton red darken-4">
+
+      </form>
+
+  </div>
+  
+  <footer>
+    <div id="footer">
+    
+    
+     <ul id="footList">
+     
+       <h5><b>Explore Our Offers!</b></h5>
+       <br/>
+       <li><a href="WS_Index.html">www.william-sonoma.com</a></li>
+       <li><a href="WS_HolidayHome.html">www.william-sonoma.com/Holiday_Home</a></li>
+       <li><a href="WS_HolidayGifts.html"> www.william-sonoma.com/Holiday_Gifts</a></li>
+       <li><a href="WS_Recipe.html">www.william-sonoma.com/Holiday_Recipes</a></li>
+       <li><a href="WS_Bonus.html">www.william-sonoma.com/Holiday_Bonus</a></li>
+       <p> William Sonoma &#174; </p>
+        
+    </ul>
+       
+    </div>
+   </footer>
+
+</body>

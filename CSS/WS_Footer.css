@@ -1,0 +1,18 @@
+footer{padding-bottom: 150px;}
+
+#footer{
+
+  background-color: #cc0000;  /*Image creation*/
+  width: 100%;
+  height: 250px;
+ 
+  position: absolute;  
+
+  bottom: -35%;
+
+
+}
+
+
+#footList {color: white; margin-left: 40%; }
+#footList a{ color: white; }

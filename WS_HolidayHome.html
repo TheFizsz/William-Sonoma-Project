@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html>
+
+<head>
+  
+    
+<meta charset="UTF-8">
+    
+<title>William-Sonoma</title>
+
+    <!--Configure the header section of the website-->
+  
+    <link href="././CSS/WS_Header.css" rel="stylesheet" type="text/css">
+    <link href="././CSS/WS_HolidayHome.css" rel="stylesheet" type="text/css">
+    <link href="././CSS/WS_Footer.css" rel="stylesheet" type="text/css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
+    <!--Alex Brush Font-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/alex-brush" type="text/css"/>
+   
+    <!--Jquery API-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+       
+       //Handles page animation
+       $(document).ready(function(){
+       
+        if($(window).width() <= 1600){ // change functionality for smaller screens 
+
+           $("#sale").animate({width: '290', height: '220'}, "slow");
+           $("#sale").find("h1").animate({fontSize: "90px"});
+          
+           $("#title").animate({opacity: '1', width: '350'}, "slow");
+        
+           $("#Nav").animate({opacity: '1', marginTop: '1%'}, "slow");     
+           $("#Nav").find("a").animate({fontSize: '125%'}, "slow");
+
+           $("#wreathHeader").find("img").animate({ width: '600px', height: '220px'}, "slow");
+           $("#wreathHeader").animate({opacity: '1',left: '30%', top: '15%'}, "slow");
+           
+           $("#wreathImage").animate({top: "59%"}, "slow");
+           $("#wreathImage").find("li").animate({opacity: '1', paddingLeft: '125', width: "19%"}, "slow");           
+
+           $("#wreathDesc").animate({opacity: '1', top: '60%', fontSize: "90%"}, "slow");
+           $("#shortDesc").animate({opacity: '1', left: '3.5%', fontSize: "17px"}, "slow");
+
+        }else {
+          
+           $("#sale").animate({width: '420px'}, "slow");
+           $("#title").animate({opacity: '1'}, "slow");     
+           $("#Nav").animate({opacity: '1', marginTop: '2'}, "slow"); 
+           $("#wreathHeader").animate({opacity: '1', top: '19%'}, "slow");
+           $("#shortDesc").animate({opacity: '1', left: '5%'}, "slow");
+           $("#wreathDesc").animate({opacity: '1', top: '60%'});
+           $("#wreathImage").find("li").animate({opacity: '1', paddingLeft: '110'}, "slow");
+
+        }
+
+       });
+
+       
+    
+    </script>
+
+</head>
+
+<body>
+
+  <div id="header">
+    
+    <div id="sale"><h1>SALE</h1></div>
+
+    <center><img id="title" src="././images/W-S Header.png"></center>
+
+  </div>
+  
+  <div id="shortDesc">
+  
+    <center><p>
+      
+      Christmas Wreaths Shipped<br>
+      directly from farm to your door<br>
+      in time for the Christmas Holiday<br>
+      <b>GUARANTEED</b><br>
+
+    </p></center>
+    
+
+  </div>
+
+  <ul id="Nav">
+    
+    <li><a href="WS_Index.html">HOME</a></li>
+    <li><a href="WS_HolidayHome.html">HOLIDAY HOME</a></li>
+    <li><a href="WS_HolidayGifts.html">HOLIDAY GIFTS</a></li>
+    <li><a href="WS_Recipe.html">RECIPES</a></li>
+    <li id=""><a href="WS_Bonus.html">BONUS SAVINGS</a></li>
+
+  </ul>
+    
+  <div id="wreathHeader"><img src="././Weraths/img Wreath-Header.jpg"></div>
+
+  <ul id="wreathImage">
+
+   <li><img src="././Weraths/img wreath-1.jpg"><br><center>Laural and Holly</center></li>
+   <li><img src="././Weraths/img wreath-2.jpg"><br><center>Holly and Pinecone</center></li>
+   <li><img src="././Weraths/img wreath-3.jpg"><br><center>Fruit and Pinecone</center></li>
+   <li><img src="././Weraths/img wreath-4.jpg"><br><center>Laural</center></li>
+
+  </ul>
+
+  <div id="wreathDesc">
+
+     <center><p><b>
+       <font color="red"> All Wreaths guaranteed</font><br>
+        fresh and delivered<br>
+        before the Holiday<br>
+        when ordered<br>
+        at-least three weeks<br>
+        in advance<br>
+        of Christmas<br>
+    </b></p></center>
+
+  </div>
+  
+
+  <footer>
+    <div id="footer">
+    
+    
+     <ul id="footList">
+     
+       <h5><b>Explore Our Offers!</b></h5>
+       <br/>
+       <li><a href="WS_Index.html">www.william-sonoma.com</a></li>
+       <li><a href="WS_HolidayHome.html">www.william-sonoma.com/Holiday_Home</a></li>
+       <li><a href="WS_HolidayGifts.html"> www.william-sonoma.com/Holiday_Gifts</a></li>
+       <li><a href="WS_Recipe.html">www.william-sonoma.com/Holiday_Recipes</a></li>
+       <li><a href="WS_Bonus.html">www.william-sonoma.com/Holiday_Bonus</a></li>
+       <p> William Sonoma &#174; </p>
+        
+    </ul>
+       
+    </div>
+   </footer>
+
+</body>

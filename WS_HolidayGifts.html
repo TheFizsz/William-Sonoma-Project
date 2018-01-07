@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html>
+
+<head>
+  
+    
+<meta charset="UTF-8">
+    
+<title>William-Sonoma</title>
+
+    <!--Configure the header section of the website-->
+    <link href="././CSS/WS_Header.css" rel="stylesheet" type="text/css">
+    <link href="././CSS/WS_HolidayHome.css" rel="stylesheet" type="text/css">
+    <link href="././CSS/WS_HolidayGift.css" rel="stylesheet" type="text/css">
+    <link href="././CSS/WS_Footer.css" rel="stylesheet" type="text/css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
+    <!--Alex Brush Font-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/alex-brush" type="text/css"/>
+   
+    <!--Jquery API-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+       
+       //Handles page animation
+       $(document).ready(function(){
+       
+       if($(window).width() <= 1600){ // change functionality for smaller screens 
+       
+          $("#sale").animate({width: '290', height: '220'}, "slow");
+           $("#sale").find("h1").animate({fontSize: "90px"});
+          
+           $("#title").animate({opacity: '1', width: '350'}, "slow");
+        
+           $("#Nav").animate({opacity: '1', marginTop: '1%'}, "slow");     
+           $("#Nav").find("a").animate({fontSize: '125%'}, "slow");
+
+           $("#wreathHeader").animate({opacity: '1', top: '15%', left: '30%'}, "slow");
+           $("#wreathHeader").find("img").animate({width: '600px', height: '220px'}, "slow");
+           
+           $("#giftDesc").animate({opacity: '1', left: '5.5%',top: '34%', fontSize: '100%'}, "slow");
+           
+           $("#giftImage").animate({top: '55%'}, "slow");
+           $("#giftImage").find("li").animate({opacity: '1', paddingLeft: '45'}, "slow");
+           $("#giftImage").find("img").animate({width: '200px', height: '200px'}, "slow");
+                
+       }else{
+        
+           $("#sale").animate({width: '420px'}, "slow");
+           $("#title").animate({opacity: '1'}, "slow");     
+           $("#Nav").animate({opacity: '1', marginTop: '2'}, "slow"); 
+           $("#wreathHeader").animate({opacity: '1', top: '19%'}, "slow");
+           $("#giftDesc").animate({opacity: '1', left: '6.5%'}, "slow");
+
+           $("#giftImage").animate({left: '10%'}, "slow");
+           $("#giftImage").find("li").animate({opacity: '1', paddingLeft: '95'}, "slow");
+           $("#giftImage").find("img").animate({width: '300px', height: '300px'}, "slow");  
+          
+       }
+       
+       });
+    
+    </script>
+
+</head>
+
+<body>
+
+  <div id="header">
+    
+    <div id="sale"><h1>SALE</h1></div>
+
+    <center><img id="title" src="././images/W-S Header.png"></center>
+
+  </div>
+  
+  <div id="giftDesc">
+  
+    <center><p>
+      
+      Find the Perfect Holiday Gift<br>
+      for everyone on your list!<br>
+
+    </p></center>
+
+    <center><p>
+
+      Everything from home decor<br>
+      to specialty seasonal<br> 
+      candy and foods <br>
+
+    </p></center>
+
+    <center><p><b>Available for a limited time!</b></p></center>
+    
+
+  </div>
+
+  <ul id="Nav">
+    
+    <li><a href="WS_Index.html">HOME</a></li>
+    <li><a href="WS_HolidayHome.html">HOLIDAY HOME</a></li>
+    <li><a href="WS_HolidayGifts.html">HOLIDAY GIFTS</a></li>
+    <li><a href="WS_Recipe.html">RECIPES</h6></a></li>
+    <li id="bonus"><a href="WS_Bonus.html">BONUS SAVINGS</a></li>
+
+  </ul>
+    
+  <div id="wreathHeader"><img src="././images/img holiday_gifts_header.jpg"></div>
+
+  <div id="gift">
+   <ul id="giftImage">
+
+    <li><img src="././Gifts/carousel-caramels.jpg"><center>Carousel</center></li>
+    <li><img src="././Gifts/classic-hot-chocolate-1-t.jpg"><center>Hot Chocolate</center></li>
+    <li><img src="././Gifts/CandyApple.jpg"><center>Holiday Specialty Food</center></li>
+    <li><img src="././images/img Holiday-2.jpg"><center>Peppermint Bark</center></li>
+
+   </ul>
+  </div>
+
+  <footer>
+    <div id="footer">
+    
+    
+     <ul id="footList">
+     
+       <h5><b>Explore Our Offers!</b></h5>
+       <br/>
+       <li><a href="WS_Index.html">www.william-sonoma.com</a></li>
+       <li><a href="WS_HolidayHome.html">www.william-sonoma.com/Holiday_Home</a></li>
+       <li><a href="WS_HolidayGifts.html"> www.william-sonoma.com/Holiday_Gifts</a></li>
+       <li><a href="WS_Recipe.html">www.william-sonoma.com/Holiday_Recipes</a></li>
+       <li><a href="WS_Bonus.html">www.william-sonoma.com/Holiday_Bonus</a></li>
+       <p> William Sonoma &#174; </p>
+        
+    </ul>
+       
+    </div>
+   </footer>
+  
+
+</body>

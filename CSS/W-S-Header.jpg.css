@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.img {
+}
+.img-wm {
+	width: 250px;
+	height: 178px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+	clear: right;
+}
+body img {
+}
+W-s header {
+	width: 450px;
+	height: 91px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	clear: right;
+}
+.W-s {
+}
